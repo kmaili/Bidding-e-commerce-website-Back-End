@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: users
+  datasource:
+    url: jdbc:postgresql://localhost:5432/users
+    username: postgres
+    password: postgres
+  data:
+    mongodb:
+      uri: mongodb://mongo:mongo@localhost:27017/products
+      username: mongo
+      password: mongo
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+  security:
+    user:
+      name: spring
+      password: spring
